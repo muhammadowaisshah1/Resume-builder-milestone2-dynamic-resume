@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Resume Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Dynamic Resume App</h1>
+    <form id="resume-form">
+<fieldset>
+    <legend><strong>Section Personal Information</strong></legend>
+    <label for="name">Full Name: </label>
+    <input type="text" id="name" placeholder="Enter Your Name" required>
+    <label for="email"> Email Address: </label>
+    <input type="email" id="email" placeholder="Enter Your email" required>
+    <label for="Phone">Mobile Phone Number: </label>
+    <input type="tel" id="phone" placeholder="Enter Your Phone Number" required>
+
+</fieldset>
+
+<fieldset>
+    <legend><strong>Section Education</strong></legend>
+    <label for="education"> Education: </label>
+    <textarea id="education" placeholder="Enter Your Education" rows="6" ></textarea>
+
+</fieldset>
+
+<fieldset>
+    <legend><strong>Section Experience</strong></legend>
+    <label for="Experience"> Experience: </label>
+    <textarea id="experience" placeholder="Enter Your Work Experience" rows="4" ></textarea>
+
+</fieldset>
+
+<fieldset>
+    <legend><strong>Section Skills</strong></legend>
+    <label for="Skills">Your Skills: </label>
+    <textarea id="skills" placeholder="Enter Your Work Skills" rows="4" ></textarea>
+
+</fieldset>
+<fieldset>
+    <legend><strong>Add Profile picture</strong></legend>
+    <label for="profilePicture"><input type="file" name="profilePicture" id="profilePicture" accept="image/*" required>
+</fieldset>
+
+        <button type="submit"><strong>Generate Resume</strong></button>
+    </form>
+
+    <br>
+
+<!-- display Dynamic resume section --> 
+ 
+     <div id="resume-display">
+     </div>
+     
+     <script src="script.js"></script>
+
+</body>
+</html>
+
+
